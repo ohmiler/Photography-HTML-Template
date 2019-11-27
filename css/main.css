@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* 
+
+ Yesteryear Font : font-family: 'Yesteryear', cursive;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* START NAV */
+nav {
+    height: 85px;
+}
+
+.nav-con {
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.menu {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+ul.menu a {
+    text-decoration: none;
+    color: #333;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+}
+ul.menu li:not(:last-child) a:hover {
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #272d36;
+}
+/* END NAV */
+
+/* START HEADER */
+
+header {
+    height: 915px;
+    display: flex;
+}
+.header-left {
+    padding: 2rem;
+    color: #fff;
+    width: 50%;
+    background: #31aae2;
+    background: url("https://images.unsplash.com/photo-1542282088-fe8426682b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60") no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.header-right {
+    width: 50%;
+    background: #272d36;
+    padding: 0 4rem;
+    color: #fff;
+}
+.cloud {
+    position: relative;
+    width: 93%;
+    top: 14rem;
+    left: 5rem;
+}
+.header-right-text {
+    margin-top: 5rem;
+}
+.header-right h1 {
+    font-family: 'Yesteryear', cursive;
+    font-size: 5rem;
+}
+.header-right p {
+    margin: 1rem 0;
+}
+.header-right a {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 1.5rem;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+.header-right a:hover {
+    color: #272d36;
+    background: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        padding: 2rem 0;
+        height: auto;
+    }
+    .nav-con {
+        height: auto;
+        flex-direction: column;
+    }
+    ul.menu {
+        flex-direction: column;
+        text-align: center;
+    }
+    ul.menu li {
+        margin: .5rem 0;
+    }
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+    .header-left {
+        width: 100%;
+        height: 400px;
+    }
+    .header-right {
+        width: 100%;
+        height: 400px;
+    }
+    .header-right-text {
+        margin-top: -4rem;
+    }
+    .header-right h1 {
+        font-size: 3rem;
+    }
+    .cloud {
+        top: 2rem;
+    }
+}
+
+/* END HEADER */
+
+/* START ABOUT ME */
+
+.about-me-con {
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: 200px 50px 1fr;
+}
+
+.about-me-first {
+    text-align: center;
+    margin-top: 2rem;
+}
+.about-me-first h2 {
+    font-family: 'Yesteryear', cursive;
+    font-size: 3rem;
+    color: #272d36;
+}
+.about-me-first > ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.about-me-first > ul li a {
+    color: #ccc;
+    transition: .3s;
+}
+.about-me-first > ul li a:hover {
+    color: #333;
+}
+
+.about-me-middle {
+    width: 1px;
+    background: #272d36;
+    margin: 0 3rem;
+}
+
+.about-me-last {
+    padding: 2rem;
+}
+
+
+/* END ABOUT ME */
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 310px 310px 310px;
+}
+.port-items img {
+    width: 100%;
+    height: 100%;
+}
+.portfolio .port-items:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+.portfolio .port-items:nth-child(2) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+.portfolio .port-items:nth-child(3) {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+.portfolio .port-items:nth-child(4) {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+}
+.portfolio .port-items:nth-child(5) {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+}
+.portfolio .port-items:nth-child(6) {
+    grid-column: 5 / 6;
+    grid-row: 2 / 4;
+}
