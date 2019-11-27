@@ -217,3 +217,16 @@ header {
     grid-column: 5 / 6;
     grid-row: 2 / 4;
 }
+
+.sign {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.sign-title {
+    padding: 0 3rem;
+    font-size: 2rem;
+}
+.sign-title img {
+    margin-top: 2rem;
+}
